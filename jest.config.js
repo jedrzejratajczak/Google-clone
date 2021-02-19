@@ -1,0 +1,9 @@
+module.exports = {
+  testEnvironment: 'jsdom',
+  collectCoverage: true,
+  transform: {
+    '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2|svg)$':
+      'jest-transform-stub'
+  },
+  transformIgnorePatterns: ['<rootDir>/node_modules/']
+};
