@@ -1,0 +1,114 @@
+@mixin hover-effect($size) {
+  box-sizing: content-box;
+  padding: #{$size}em;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: #ebecec;
+  }
+}
+
+@mixin button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin size-fix($size) {
+  height: #{$size}px;
+  width: #{$size}px;
+}
+
+@mixin hover-text($text, $left-shift: 0) {
+  position: relative;
+
+  &::after {
+    content: '#{$text}';
+    width: max-content;
+    position: absolute;
+    left: calc(50% - #{$left-shift}rem);
+    bottom: -2.7rem;
+    padding: 0.35em 0.7em;
+    border-radius: 7px;
+    background-color: #4f5355;
+    color: #fff;
+    font-size: 1.3rem;
+    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    animation: hover-text-animation 0s 0.5s forwards;
+  }
+}
+
+@keyframes hover-text-animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.header {
+  height: 6rem;
+  padding: 0 2em;
+  display: grid;
+  align-items: center;
+  grid-template-columns: min-content 1fr min-content min-content;
+  gap: 1.5rem;
+}
+
+.header-links {
+  display: flex;
+  justify-self: end;
+  grid-column: span 2;
+  gap: 1.5rem;
+
+  &__link {
+    font-size: 1.3rem;
+
+    &:any-link {
+      color: #000;
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.menu-button {
+  @include hover-effect(0.6);
+  @include button;
+  @include size-fix(25);
+  @include hover-text(Google apps);
+
+  &__icon {
+    height: 2.5rem;
+  }
+}
+
+.account-button {
+  @include hover-effect(0.2);
+  @include button;
+  @include size-fix(32);
+  @include hover-text(Google account, 3);
+
+  &__icon {
+    border-radius: 50%;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.search-modes {
+  display: none;
+}
