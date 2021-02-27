@@ -6,7 +6,7 @@ const searchIcon = require('../assets/search.svg');
 document.getElementById('search-icon').src = searchIcon;
 
 const voiceSearchIcon = require('../assets/voice.svg');
-document.getElementById('voice-input').src = voiceSearchIcon;
+document.getElementById('voice-icon').src = voiceSearchIcon;
 
 const menuIcon = require('../assets/menu.svg');
 document.getElementById('menu').src = menuIcon;

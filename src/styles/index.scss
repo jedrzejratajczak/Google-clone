@@ -1,7 +1,10 @@
 @import 'reset';
 @import 'header';
+@import 'main';
 
-body {
+.body {
   height: 100vh;
   overflow: hidden;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }

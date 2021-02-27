@@ -1,3 +1,5 @@
+@import 'universal';
+
 @mixin hover-effect($size) {
   box-sizing: content-box;
   padding: #{$size}em;
@@ -6,13 +8,6 @@
   &:hover {
     background-color: #ebecec;
   }
-}
-
-@mixin button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 @mixin size-fix($size) {
