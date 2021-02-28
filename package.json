@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js -o docs",
     "test": "jest",
     "lint": "eslint src --ext .js",
     "lint:scss": "stylelint \"src/**/*.scss\"",
