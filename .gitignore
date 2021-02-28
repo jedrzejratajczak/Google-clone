@@ -6,9 +6,6 @@
 # testing
 /coverage
 
-# production
-/dist
-
 # yarn
 .yarn/*
 !.yarn/releases
