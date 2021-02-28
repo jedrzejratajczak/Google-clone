@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  background-color: #f2f2f2;
+
+  &__section {
+    padding: 1.5rem 3rem;
+    font-size: 1.4rem;
+    color: #808488;
+
+    &--double {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__section + &__section {
+    border-top: 1px solid rgba(1, 1, 1, 0.1);
+  }
+
+  &__links {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__link {
+    &:any-link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

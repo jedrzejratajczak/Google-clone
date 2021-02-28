@@ -1,2 +1,2 @@
-require('./styles/index.scss');
+require('./index.scss');
 require('./scripts/icons');
