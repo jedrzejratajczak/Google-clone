@@ -1,5 +1,5 @@
 # Google clone
-Created in HTML5, SASS with BEM metodology and JavaScript. Project is bundled by webpack which is configured to transpile sass into css, minify all files and transpile JavaScript ES6+ into ES5. Finally deployed on gh-pages branch with the usage of yarn script.  
+Created in HTML5, SASS with BEM methodology and JavaScript. Project is bundled by webpack which is configured to transpile sass into css, minify all files and transpile JavaScript ES6+ into ES5. Finally deployed on gh-pages branch with the usage of yarn script.  
 [View Demo](https://nilphym.github.io/Google-clone)
 
 
